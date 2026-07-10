@@ -1,9 +1,16 @@
 import streamlit as st
 st.title("AI Multiverse ")
 
-personality=st.selectbox("Who do you want to talk to?",[
+personality=st.sidebar.selectbox("Who do you want to talk to?",[
     "An Expert Hacker", "A HR", "A crazy Tech fresher"
 ])
+st.sidebar.header("🌌 Multiverse Controls")
+
+intensity = st.sidebar.slider(
+    "Character Intensity",
+    1, 20, 5,
+    help="Higher intensity makes the AI stay more deeply in character."
+)
 
 from google import genai
 import os
