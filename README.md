@@ -1,17 +1,24 @@
 # 🌌 AI Multiverse
 
-AI Multiverse is a simple Streamlit application that allows users to chat with different AI personalities powered by Google's Gemini API. Select a personality, enter your message, and experience responses that stay true to the chosen character.
+AI Multiverse is an interactive Streamlit application that lets users chat with different AI personalities powered by **Google Gemini 2.5 Flash**. Choose a personality, adjust its behavior using the Character Intensity slider, and enjoy immersive AI conversations with chat history support.
+
+---
 
 ## ✨ Features
 
-- 🎭 Choose from multiple AI personalities:
+- 🎭 Chat with multiple AI personalities
   - An Expert Hacker
-  - An HR Recruiter
+  - An HR
   - A Crazy Tech Fresher
+- 🎚️ Adjustable Character Intensity
 - 💬 Interactive AI conversations
-- ⚡ Powered by Gemini 2.5 Flash
-- 🎨 Simple and user-friendly Streamlit interface
+- 📝 Chat History
+- 🗑️ Clear Chat functionality
+- ⚡ Powered by Google Gemini 2.5 Flash
+- 🎨 Clean and interactive Streamlit interface
 - 🔒 Secure API key management using `.env`
+
+---
 
 ## 🛠️ Tech Stack
 
@@ -20,22 +27,29 @@ AI Multiverse is a simple Streamlit application that allows users to chat with d
 - Google Gemini API
 - python-dotenv
 
-## 📂 Project Files
+---
+
+## 📂 Project Structure
 
 ```text
 AI-Multiverse/
 │
 ├── app.py
+├── README.md
 ├── .env
-└── README.md
+└── .gitignore
 ```
+
+> **Note:** The `.env` file is used only for local development and should not be pushed to GitHub.
+
+---
 
 ## 🚀 Getting Started
 
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/AI-Multiverse.git
+git clone https://github.com/Aiman2027/AI-Multiverse.git
 ```
 
 ### Navigate to the project
@@ -62,21 +76,30 @@ GEMINI_API_KEY=your_api_key_here
 streamlit run app.py
 ```
 
+---
+
 ## 🎯 How to Use
 
 1. Launch the application.
-2. Select an AI personality.
-3. Type your message.
-4. Click **SEND**.
-5. Receive a response that matches the selected personality.
+2. Choose an AI personality from the sidebar.
+3. Adjust the Character Intensity slider.
+4. Type your message.
+5. Click **SEND**.
+6. Continue the conversation with chat history.
+7. Use **Clear Chat** to start a new conversation.
+
+---
 
 ## 📚 What I Learned
 
-- Building interactive web apps with Streamlit
+- Building interactive web applications with Streamlit
 - Integrating the Google Gemini API
-- Prompt engineering using dynamic instructions
-- Managing API keys securely with `.env`
-- Creating AI-powered applications
+- Prompt engineering for AI personalities
+- Managing conversation history using Session State
+- Secure API key management with `.env`
+- Designing responsive AI-powered user interfaces
+
+---
 
 ## 👩‍💻 Developed By
 
@@ -87,4 +110,4 @@ streamlit run app.py
 
 ---
 
-⭐ If you enjoyed this project, consider giving it a Star!
+⭐ If you found this project interesting, consider giving it a **Star** on GitHub!
